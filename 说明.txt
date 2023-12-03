@@ -1,0 +1,19 @@
+网页版快速使用流程(亲测有效) #33
+
+从 GitHub下载代码并解压，将文件夹 ttskit-main 作为自己的项目文件夹
+
+从百度网盘(下载地址) 下载 resource 将其放到 ttskit-main\ttskit 文件夹中覆盖原有的 resource 文件夹
+
+以上是作者提供步骤的大致描述, 但有一个小问题
+实际上, 在替换过程中, ttskit-main\ttskit\resoure\__init__.py 不要替换
+或者 完全替换之后, 再把 github 下载的文件解压一份, 然后用那里面的 resoure\__init__.py 单独替换回来
+
+然后就在 ttskit-main 目录打开命令行, 输入并回车 pip install -U ttskit
+
+pip 结束后, 在 ttskit-main 文件夹中建立一个 demo.py 文件, 并输入以下代码
+
+from ttskit import http_server
+http_server.start_sever()```
+
+然后在命令行中输入 py demo.py
+过一段时间, 命令行最下端出现一段网址, 将它复制到浏览器粘贴即可
